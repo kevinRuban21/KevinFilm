@@ -1,0 +1,108 @@
+nav {
+  background: transparent !important;
+  font-family: "Viga", sans-serif;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+.navbar-nav {
+  margin-left: 39%;
+  font-size: large;
+}
+.hero {
+  margin-top: -60px !important;
+  /* background-image: url("img/planet_ring_purple_149425_1920x1080.jpg"); */
+  background-color: #222;
+  background-size: cover;
+  height: 100vh;
+}
+.bgAnimation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  background-attachment: #1d1d1d;
+  filter: saturate(2);
+  overflow: hidden;
+}
+.colorBox {
+  z-index: 2;
+  filter: brightness(1.1);
+  transition: 2s ease;
+  position: relative;
+  margin: 2px;
+  background: #1d1d1d;
+}
+.colorBox:hover {
+  background: #441752;
+  transition-duration: 0s;
+}
+.bgAmim {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: #441752;
+  filter: blur(60px);
+  animation: animBack 6s linear infinite;
+}
+@keyframes animBack {
+  0% {
+    top: -60px;
+  }
+  100% {
+    top: 420px;
+  }
+}
+.card {
+  margin-top: 150px;
+  background-color: rgba(255, 255, 255, 0.3) !important;
+  border: 1px solid #fff;
+  backdrop-filter: blur(1.5px) !important;
+}
+
+.card a {
+  color: #441752 !important;
+}
+
+.judul {
+  font-family: "Space Mono", monospace;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  margin-top: 50px;
+  font-weight: bold;
+}
+.keterangan {
+  font-family: "Poppins", sans-serif;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+  font-family: "Poppins", sans-serif;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+button {
+  width: 80%;
+  background-color: #441752 !important;
+  color: #fff !important;
+  font-family: "Poppins", sans-serif;
+  border-radius: 20px !important;
+  margin-bottom: 50px;
+  margin-left: 10%;
+}
+
+input {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  border-radius: 20px !important;
+  border: none;
+}
+
+.input-group {
+  width: 80% !important;
+  margin-left: 10% !important;
+}
